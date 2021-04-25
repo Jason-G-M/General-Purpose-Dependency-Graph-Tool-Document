@@ -52,7 +52,6 @@ Config the name of processes and starting assemblies before scanning.
 #### Instruction
 
 - Go to SYSTEM -> PROCESS CONFIG.
-
 - Click ADD NEW to add a new config.
 
 ![process config](image/System/ProcessConfig.png "process config")
@@ -79,7 +78,6 @@ Config the name of processes and starting assemblies before scanning.
 ![scan status](image/System/Scan.png "Scan status")
 
 ![customize folder](image/System/folder.JPG "Folder")
-
 **Users may customise the workspace folder by changing the value of "workspace" at docker-compose.yml**
 
 - Select the target folder and click SCAN to start the scanning. FORCE SCAN is a back up option for the case of scanning failure.
