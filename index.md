@@ -74,12 +74,11 @@ Config the name of processes and starting assemblies before scanning.
 #### Instruction
 
 - Go to SYSTEM -> SCAN STATUS.
-
 - Place the file to be scanned into the workspace folder.
 
 ![scan status](image/System/Scan.png "Scan status")
 
-![](image/System/folder.jpg "Folder")
+![customize folder](image/System/folder.JPG "Folder")
 
 **Users may customise the workspace folder by changing the value of "workspace" at docker-compose.yml**
 
