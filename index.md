@@ -79,7 +79,7 @@ Config the name of processes and starting assemblies before scanning.
 
 ![scan status](image/System/Scan.png "Scan status")
 
-![scan status](image/System/folder.jpg "Folder")
+![](image/System/folder.jpg "Folder")
 
 **Users may customise the workspace folder by changing the value of "workspace" at docker-compose.yml**
 
