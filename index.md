@@ -66,10 +66,8 @@ Config the name of processes and starting assemblies before scanning.
 ![scan result](image/System/ScanResult.png "Scan result")
 
 ## 4.2 Dashboard  
-This page is designed to display overall information of compatible and incompatible APIs of different processes in different builds. The data of this page is from analyzing the demo we have prepared.
-
-### Charts  
-The dashboard contains four charts.
+This page is designed to display overall information of compatible and incompatible APIs of different processes in different builds. The data of this page is from analyzing the demo we have prepared.    
+The dashboard contains four charts:  
 - [Pie charts of version's status](#Pie-charts-of-version's-status), showing the number of compatible and incompatible APIs.
 - [Trend over builds](#Trend-over-builds), showing the version status change over time.
 - [Overlaps per build](#Overlaps-per-build), showing the impact on other processes.
@@ -78,7 +76,7 @@ The dashboard contains four charts.
 ![dashboard overview](image/DashboardOverview.png "Dashboard overview")  
 **Dashboard overview**
 
-#### Pie charts of version's status  
+### Pie charts of version's status  
 ![Proportion](image/Proportion.png "Proportion of compatibles and incompatibles")  
 **Proportion of compatibles and incompatibles**
 
@@ -91,21 +89,21 @@ DefaultRepo: The content of the DefaultRepo pie chart comes from your repo (or y
 - Nuget: NuGet is the package manager for .NET. The pie chart shows the number of compatible and incompatible APIs coming from NuGet.  For the demo case, Demo 1.0.0.0 uses 10 APIs from NuGet, so in the pie chart, the compatible is 10 and the incompatible is 0.
 - Package: It shows the number of compatible and incompatible assemblies in all NuGet packages. The information in this chart is set manually. The default info shows that all the APIs are incompatible, while users can mark any NuGet assemblies compatible. The total number of APIs in the Package pie chart is the same as those in the NuGet pie chart. Visit [Assembly Detail](#5.2.5-Assembly-Details) for more information. 
 
-#### Trend over builds  
+### Trend over builds  
 ![TrendOverBuilds](image/TrendOverBuilds.png "Trend over builds")  
 **Number of compatibles and incompatibles of each build**
 
-#### Overlaps per build  
+### Overlaps per build  
 ![Overlaps Per Build](image/OverlapsPerBuild.png "Overlaps per build")  
 ** Overlaps and differences between current build and others**
 
-#### All processes per build  
+### All processes per build  
 ![All processes](image/AllProcessesPerBuild.png "All processes")  
 **Number of compatibles and incompatibles of each process in the current build.**
 
-#### Note  
+### Note  
 - The results shown on this page are from Demo 1.0.0.0.
-- Make sure you match the version and process name. The version is the file version of your repo, and the process name can be found in the Process Config page.  
+- Make sure you match the VERSION and PROCESS. The VERSION is the file version of your repo, and the PROCESS can be found in the PROCESS CONFIG page.  
 ![version and process](image/VersionAndProcess.png "Version and process")  
 **Version and process**
 
@@ -115,9 +113,8 @@ DefaultRepo: The content of the DefaultRepo pie chart comes from your repo (or y
 View the name of assemblies directly referred by a process.
 
 #### Instruction  
-1. Select the Version and Process.
-2. View results. 
-3. Get Results.  
+1. Input the VERSION and PROCESS.
+2. Get Results.  
 ![overview](image/Process'sRootParentOverview.png "Overview")  
 **Process's Root Parent Overview**
 
@@ -128,12 +125,11 @@ View the name of assemblies directly referred by a process.
 - Check the node for work related to "Separating".
 
 #### Instruction  
-1. Select Version, Process,  and Target Assembly. 
-2. Select Skip Assembly. This will filter some results since the paths that contain the Skip Assembly you choose will be filtered.
-4. Uncheck ALL PATHS and fill path number with a specific number to customize the number of results to display (up to 500, optional). Or check ALL PATHS to see all the results.
-4. Click on the X button in the skips list to remove the assembly from the list (optional). 
-5. Get Results.
-
+1. Input VERSION, PROCESS, and TARGET ASSEMBLY. 
+2. Input SKIP ASSEMBLY to filter out the results containing those assemblies.
+3. Uncheck ALL PATHS and input PATHS NUMBER to customize the number of results to display (up to 500).
+4. Click the X button in the skips list to remove the assembly from the list.
+5. Get Results.  
 ![Process to assembly](image/ProcessToAssembly.png "Process to assembly")  
 **Multiple paths start from process to target assembly Overview**
 
@@ -144,11 +140,11 @@ View the name of assemblies directly referred by a process.
 - Check the node for work related to "Separating".
 
 #### Instruction  
-1. Select Version, Process, and Target Assembly.
-2. Select SKIP ASSEMBLY. This will filter some results since the paths that contain the Skip Assembly you choose will be filtered.
-3. Uncheck ALL PATHS and fill path number with s specific number to customize the number of results to display (up to 500, optional). Or check ALL PATHS to see all the results.
-4. Click on the X button in the skips list to remove the assembly from the list (optional). 
-5. Get Results.  
+1. Input VERSION, PROCESS, and TARGET ASSEMBLY.
+2. Input SKIP ASSEMBLY. This will filter out results containing those assemblies.
+3. Uncheck ALL PATHS and input PATHS NUMBER to customize the number of results to display (up to 500).
+4. Click the X button in the skips list to remove the assembly from the list.
+5. Get Results.   
 ![Assembly to assembly](image/Assembly2AssemblyOverview.png "Assembly to assembly")  
 **Assembly to assembly overview**
 
@@ -159,9 +155,9 @@ View the name of assemblies directly referred by a process.
 - Find out assemblies in special conditions (contains incompatible APIs or circular reference).
 
 #### Instruction  
-1. Select the Version and Process. 
+1. Input VERSION and PROCESS. 
 2. Filter data with assembly name or other conditions. 
-3. Click on the assembly in results to view its details (optional). 
+3. Click the assembly in results to view its details (optional). 
 4. Click EXPORT TOTAL to export the results as excel (optional). 
 5. Get Results.  
 ![Process'sAsssembliesOverview](image/Process'sAsssembliesOverview.png "Process's assemblies overview")  
@@ -178,17 +174,17 @@ View the name of assemblies directly referred by a process.
 
 #### Instruction  
 See details of an assembly
-1. Select the Version and Assembly to get detailed information. 
-2. Select the process to filter data. 
+1. Input VERSION and ASSEMBLY to get detailed information. 
+2. Input the PROCESS to filter data. 
 3. Get Results.  
 ![Assembly details overview](image/AssemblyDetailsOverview.png "Assembly details overview")  
 **Assembly details overview**
 
 ##### Set the compatibility of assemblies in the Package pie chart  
-1. Set the version and choose an assembly.
+1. Input VERSION and ASSEMBLY.
 2. Click the CREATE button.
 3. Set HASNETCOREVERSION to True.
-4. Click ADD PACKAGE INFO (only enable when HasNetCoreVersion is True).
+4. Click ADD PACKAGE INFO (only enabled when HASNETCOREVERSION is True).
 5. Input package information.
 6. Get Results.  
 ![SetCompatibilityOfAssemblies](image/SetCompatibilityOfAssemblies.png "Set the compatibility of assemblies in Package pie chart")  
@@ -204,9 +200,9 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Arrange and track the work related to "Porting" and "Separation".
 
 #### Instruction  
-- Select the Process or Assembly tab. 
-- Select source type (optional). 
-- Select the version and process/assembly name of base-build and aim-build to view results. 
+- Select the PROCESS or ASSEMBLY tab. 
+- Select SOURCE TYPE (optional). 
+- Input the version and process/assembly name of base-build and aim-build to view results. 
 - Click on the number of differences to view details. 
 - Get Results.  
 ![DifferenceDetails](image/DifferenceDetails.png "Difference overview")  
@@ -220,12 +216,11 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Check whether the new assembly is safe before adding it to the master.
 
 #### Instruction  
-- Select Version and Process.
+- Input VERSION and PROCESS.
 - Select files, uploading assemblies to find out whether it will affect the .NET Core process.
-- Click ANALYSE, and wait for a moment to see results.
+- Click ANALYSE to get results, this may take a minute.
 - NOT SAFE means the change or addition of assembly will have an impact on the original process, which needs to be analyzed.
-- SAFE means changing or adding an assembly will not affect the original process.
-- Get Results.  
+- SAFE means changing or adding an assembly will not affect the original process.  
 ![Operations](image/Operations.png "Operations")  
 **Operations**
 
@@ -237,9 +232,9 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Get all paths from the target assembly to its children assemblies, helping to work on "eliminating incompatible APIs" tasks.
 
 #### Instruction  
-- Select Version and Process.
-- Select a target assembly.
-- Select MUST PASSING ASSEMBLY.
+- Input VERSION and PROCESS.
+- Input TARGET ASSEMBLY.
+- Input MUST PASSING ASSEMBLY.
 - Input PATH NUMBER or check ALL PATHS checkbox, this will affect the number of results to display.
 - Get Results.  
 ![AssemblyChildrenPathsOverview](image/AssemblyChildrenPathsOverview.png "Assembly Children Paths Overview")  
@@ -250,8 +245,8 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Suggest a possible solution for assembly splitting.
 
 #### Instruction  
-- Select build version.
-- Select a target assembly.
+- Input a build version.
+- Input a target assembly.
 - Input name of incoming references to put types called in same assemblies, if any.
 - Input types that to be put together in same assembly, if any.
 - Click GENERATE SPLIT SOLUTION button and get result.  
@@ -307,8 +302,8 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find out the distance between a process/assembly to a type.
 
 #### Instruction  
-1. Select the Process or Assembly tab. 
-2. Select the Version and Process name. 
+1. Select the PROCESS or ASSEMBLY tab. 
+2. Input the VERSION and PROCESS. 
 3. Add filter according to a specific condition (optional). 
 4. Get Results.  
 ![Process's Types Overview](image/Process'sTypesOverview.png "Process's types overview")  
@@ -319,7 +314,7 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find the shortest path from a process to a type, helpful to works related to "Separation".
 
 #### Instruction  
-1. Select Version, Source Process, and Target Type.
+1. Input VERSION, SOURCE PROCESS, and TARGET TYPE.
 2. Get Results.  
 ![One Shortest Path Process To Type Overview](image/ShortestPathP2T.png "One Shortest Path Process To Type Overview")  
 **One Shortest Path Process To Type Overview**
@@ -329,7 +324,7 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find out the shortest path from an assembly to a type, helpful to works related to "Separation".
 
 #### Instruction  
-1. Select Version, Start Assembly, and Target Type.
+1. Input VERSION, START ASSEMBLY, and TARGET TYPE.
 2. Get Results.  
 ![ShortestPathA2T](image/ShortestPathA2T.png "One Shortest Path From Assembly To Type Overview")  
 **One Shortest Path From Assembly To Type Overview**
@@ -340,9 +335,9 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Check if it is able to dereference the target type from the Source Process through the selected node.
 
 #### Instruction  
-- Select Version, Source Process, and Target Type.
-- Select Skip Types and Skip Assemblies.
-- Uncheck ALL PATHS and fill PATH NUMBER with a specific number to customize the number of results to display (up to 500, optional), or check ALL PATHS to see all the results.
+- Input VERSION, SOURCE PROCESS and TARGET TYPE.
+- Input SKIP TYPES and SKIP ASSEMBLIES.
+- Uncheck ALL PATHS and input PATHs NUMBER to customize the number of results to display (up to 500).
 - Get Results.  
 ![PTO](image/PTO.png "Process's type overview")  
 **Process's Type Overview**
@@ -352,9 +347,9 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find out paths from an assembly to a type.
 
 #### Instruction  
-1. Select Version, Start Assembly, and Target Type.
-2. Select Skip.
-3. Uncheck ALL PATHS and fill PATH NUMBER with a specific number to customize the number of results to display (up to 500, optional). Or check ALL PATHS to see all the results.
+1. Input VERSION, START ASSEMBLY and TARGET TYPE.
+2. Input SKIP.
+3. Uncheck ALL PATHS and fill PATHS NUMBER to customize the number of results to display (up to 500).
 4. Get Results.  
 ![MultiPathA2T](image/MultiPathA2T.png "Multi-path assembly to type overview")  
 **Multi-Path Assembly To Type Overview**
