@@ -125,7 +125,7 @@ View the name of assemblies directly referred by a process.
 - Check the node for work related to "Separating".
 
 #### Instruction  
-1. Input VERSION, PROCESS, and TARGET ASSEMBLY. 
+1. Input VERSION, PROCESS and TARGET ASSEMBLY. 
 2. Input SKIP ASSEMBLY to filter out the results containing those assemblies.
 3. Uncheck ALL PATHS and input PATHS NUMBER to customize the number of results to display (up to 500).
 4. Click the X button in the skips list to remove the assembly from the list.
@@ -140,7 +140,7 @@ View the name of assemblies directly referred by a process.
 - Check the node for work related to "Separating".
 
 #### Instruction  
-1. Input VERSION, PROCESS, and TARGET ASSEMBLY.
+1. Input VERSION, PROCESS and TARGET ASSEMBLY.
 2. Input SKIP ASSEMBLY. This will filter out results containing those assemblies.
 3. Uncheck ALL PATHS and input PATHS NUMBER to customize the number of results to display (up to 500).
 4. Click the X button in the skips list to remove the assembly from the list.
@@ -173,7 +173,7 @@ View the name of assemblies directly referred by a process.
 - Set the compatibility of assemblies.
 
 #### Instruction  
-See details of an assembly
+##### See details of an assembly  
 1. Input VERSION and ASSEMBLY to get detailed information. 
 2. Input the PROCESS to filter data. 
 3. Get Results.  
@@ -200,11 +200,11 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Arrange and track the work related to "Porting" and "Separation".
 
 #### Instruction  
-- Select the PROCESS or ASSEMBLY tab. 
-- Select SOURCE TYPE (optional). 
-- Input the version and process/assembly name of base-build and aim-build to view results. 
-- Click on the number of differences to view details. 
-- Get Results.  
+1. Select the PROCESS or ASSEMBLY tab. 
+2. Select SOURCE TYPE (optional). 
+3. Input the version and process/assembly name of base-build and aim-build to view results. 
+4. Click on the number of differences to view details. 
+5. Get Results.  
 ![DifferenceDetails](image/DifferenceDetails.png "Difference overview")  
 **Difference overview**
 
@@ -216,11 +216,11 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Check whether the new assembly is safe before adding it to the master.
 
 #### Instruction  
-- Input VERSION and PROCESS.
-- Select files, uploading assemblies to find out whether it will affect the .NET Core process.
-- Click ANALYSE to get results, this may take a minute.
-- NOT SAFE means the change or addition of assembly will have an impact on the original process, which needs to be analyzed.
-- SAFE means changing or adding an assembly will not affect the original process.  
+1. Input VERSION and PROCESS.
+2. Select files, uploading assemblies to find out whether it will affect the .NET Core process.
+3. Click ANALYSE to get results, this may take a minute.
+4. NOT SAFE means the change or addition of assembly will have an impact on the original process, which needs to be analyzed.
+5. SAFE means changing or adding an assembly will not affect the original process.  
 ![Operations](image/Operations.png "Operations")  
 **Operations**
 
@@ -232,11 +232,11 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Get all paths from the target assembly to its children assemblies, helping to work on "eliminating incompatible APIs" tasks.
 
 #### Instruction  
-- Input VERSION and PROCESS.
-- Input TARGET ASSEMBLY.
-- Input MUST PASSING ASSEMBLY.
-- Input PATH NUMBER or check ALL PATHS checkbox, this will affect the number of results to display.
-- Get Results.  
+1. Input VERSION and PROCESS.
+2. Input TARGET ASSEMBLY.
+3. Input MUST PASSING ASSEMBLY.
+4. Input PATH NUMBER or check ALL PATHS checkbox, this will affect the number of results to display.
+5. Get Results.  
 ![AssemblyChildrenPathsOverview](image/AssemblyChildrenPathsOverview.png "Assembly Children Paths Overview")  
 **Assembly Children Paths Overview**
 
@@ -245,11 +245,11 @@ If compatibility was set successfully, the CREATE button will be changed to UPDA
 - Suggest a possible solution for assembly splitting.
 
 #### Instruction  
-- Input a build version.
-- Input a target assembly.
-- Input name of incoming references to put types called in same assemblies, if any.
-- Input types that to be put together in same assembly, if any.
-- Click GENERATE SPLIT SOLUTION button and get result.  
+1. Input a build version.
+2. Input a target assembly.
+3. Input name of incoming references to put types called in same assemblies, if any.
+4. Input types that to be put together in same assembly, if any.
+5. Click GENERATE SPLIT SOLUTION button and get result.  
 ![SearchInstruction](image/AssemblySplitter/SearchInstruction.png "Instruction")  
 **Instruction of searching**
 
@@ -314,7 +314,7 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find the shortest path from a process to a type, helpful to works related to "Separation".
 
 #### Instruction  
-1. Input VERSION, SOURCE PROCESS, and TARGET TYPE.
+1. Input VERSION, SOURCE PROCESS and TARGET TYPE.
 2. Get Results.  
 ![One Shortest Path Process To Type Overview](image/ShortestPathP2T.png "One Shortest Path Process To Type Overview")  
 **One Shortest Path Process To Type Overview**
@@ -324,7 +324,7 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 - Find out the shortest path from an assembly to a type, helpful to works related to "Separation".
 
 #### Instruction  
-1. Input VERSION, START ASSEMBLY, and TARGET TYPE.
+1. Input VERSION, START ASSEMBLY and TARGET TYPE.
 2. Get Results.  
 ![ShortestPathA2T](image/ShortestPathA2T.png "One Shortest Path From Assembly To Type Overview")  
 **One Shortest Path From Assembly To Type Overview**
@@ -337,7 +337,7 @@ In condition of TYPE CLOSURES is applied, bundled types will be colored same in 
 #### Instruction  
 - Input VERSION, SOURCE PROCESS and TARGET TYPE.
 - Input SKIP TYPES and SKIP ASSEMBLIES.
-- Uncheck ALL PATHS and input PATHs NUMBER to customize the number of results to display (up to 500).
+- Uncheck ALL PATHS and input PATHS NUMBER to customize the number of results to display (up to 500).
 - Get Results.  
 ![PTO](image/PTO.png "Process's type overview")  
 **Process's Type Overview**
